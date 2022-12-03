@@ -1,9 +1,12 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@SuperBuilder
 @Entity
 @Table(name = "specialties")
 public class Speciality extends  BaseEntity{

@@ -1,9 +1,11 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-
+@SuperBuilder
 @Entity
 @Table(name ="owners")
 public class Owner  extends Person{

@@ -1,10 +1,12 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
-
+@SuperBuilder
 @Entity
 @Table(name ="pets")
 public class Pet extends BaseEntity{

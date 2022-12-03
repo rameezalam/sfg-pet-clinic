@@ -1,10 +1,13 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 
 @MappedSuperclass
+@SuperBuilder
 public class BaseEntity implements Serializable {
 
    @Id
